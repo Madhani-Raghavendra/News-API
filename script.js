@@ -2,7 +2,7 @@
 const sportscontainer=document.querySelector(".sportsnews")
 const moviescontainer=document.querySelector(".moviesnews")
  const navigationbar=document.querySelector(".nav")
-  const heading=document.querySelector(".head")
+
 
  function nav (btn){
   
@@ -12,7 +12,7 @@ const moviescontainer=document.querySelector(".moviesnews")
  sportscontainer.classList.add('hide')
  bitcoincontainer.classList.add('hide')
  moviescontainer.classList.add('hide')
-  heading.classList.remove('hide')
+
 })
  const button1=document.createElement('button')
  button1.innerHTML="SPORTS NEWS"
@@ -20,7 +20,7 @@ const moviescontainer=document.querySelector(".moviesnews")
   sportscontainer.classList.remove('hide')
   bitcoincontainer.classList.add('hide')
   moviescontainer.classList.add('hide')
-   heading.classList.add('hide')
+   
    getsportsData()
  
  })
@@ -30,7 +30,7 @@ const moviescontainer=document.querySelector(".moviesnews")
   sportscontainer.classList.add('hide')
   bitcoincontainer.classList.remove('hide')
   moviescontainer.classList.add('hide')
-   heading.classList.add('hide')
+
    getApiData()
  })
  const button3=document.createElement('button')
@@ -39,7 +39,7 @@ const moviescontainer=document.querySelector(".moviesnews")
   sportscontainer.classList.add('hide')
   bitcoincontainer.classList.add('hide')
   moviescontainer.classList.remove('hide')
-   heading.classList.add('hide')
+
    getmoviesData()
  })
  navigationbar.appendChild(button)
@@ -192,10 +192,4 @@ function moviesData(moviedata){
   })
 }
 
-function title(){
-   const heads=document.createElement('div')
-   heads.innerHTML='NEWS API'
 
-   heading.appendChild(heads)
-}
-title()
